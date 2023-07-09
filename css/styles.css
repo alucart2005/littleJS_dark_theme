@@ -13,8 +13,11 @@ body {
   min-height: 100vh;
   transition: 0.5s ease-in-out;
 }
+body.light-theme {
+  background: linear-gradient(to bottom, #d3d09a, #eeeeee);
+}
 
-#toogle {
+#toggle {
   position: relative;
   display: block;
   width: 320px;
@@ -24,7 +27,7 @@ body {
   transition: 0.5s ease-in-out;
   box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1), inset 0 8px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 4px rgba(0, 0, 0, 0.1);
 }
-#toogle .indicator {
+#toggle .indicator {
   position: absolute;
   top: 0;
   left: 0;
@@ -37,4 +40,12 @@ body {
   transform: scale(0.9);
   box-shadow: 0 0 20px rgba(125, 39, 39, 0.2), inset 0 4px 4px rgba(255, 255, 255, 0.2), inset 0 -4px 4px rgba(255, 255, 255, 0.2);
   transition: 0.5s ease-in-out;
+}
+#toggle.active {
+  background-color: #eeeeee;
+}
+#toggle.active .indicator {
+  left: 160px;
+  background: linear-gradient(45deg, #d4dbc4, #ae9393);
+  box-shadow: inset 0 0 20px rgba(125, 39, 39, 0.2), inset 0 4px 4px rgba(0, 0, 0, 0.2), inset 0 -4px 4px rgba(0, 0, 0, 0.2);
 }/*# sourceMappingURL=styles.css.map */
